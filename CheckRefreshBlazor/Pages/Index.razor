@@ -1,4 +1,5 @@
 ﻿@using CheckRefreshBlazor
+@using Microsoft.Azure.Cosmos
 
 @inject StringService  NameSvc
 
@@ -12,10 +13,24 @@ Welcome to your new app.
 
 <button @onclick="@Add">AddString</button>
 
+<button @onclick="@InitClient">Init Client</button>
+
+<button @onclick="@CheckBtn">CheckButon</button>
+
 @code{
 
     void Add()
     {
         this.NameSvc.Add();
     }
+
+    void InitClient()
+    {
+        var cosmosClient = new CosmosClient("AccountEndpoint=your string");
+    }
+    void CheckBtn()
+    {
+        Console.WriteLine("The client is responsive");
+    }
+
 }
