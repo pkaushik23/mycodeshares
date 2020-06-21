@@ -3,7 +3,7 @@
 ### Motivation:
 >Implement social authentication without the [ASP.NET Core Identity](1) API.
 
-While trying to implement social login for a sample *ASP.NET Core MVC application*, I went through the official Microsoft [documentation](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-3.1). And, I must admit despite going through it mutiple times, I was not able to wrap my head around it. Either, perhaps the documentation is arranged in a manner which is more focussed towards [ASP.NET Core Identity](1) API or I was terribly confused. I think safe to assume later.
+While trying to implement social login for a sample *ASP.NET Core MVC application*, I went through the official Microsoft [documentation](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-3.1). And, I must admit despite going through it mutiple times, I was not able to wrap my head around it. Either, perhaps the documentation is arranged in a manner which is more focussed towards [ASP NET Core Identity](1) API or I was terribly confused. I think safe to assume later.
 
 This blog is a result of one of my self learning exercise, I followed this help [document](2), but still many things were missing and hence this post. Therefore documenting it for later reference.
 
