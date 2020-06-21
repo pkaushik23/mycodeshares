@@ -1,11 +1,11 @@
 ## Facebook Authentication in ASP.Net Core without Identity
 
 ### Motivation:
->Implement social authentication without the [ASP.NET Core Identity](1) API.
+>Implement social authentication without the [ASP.NET Core Identity][1] API.
 
-While trying to implement social login for a sample *ASP.NET Core MVC application*, I went through the official Microsoft [documentation](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-3.1). And, I must admit despite going through it mutiple times, I was not able to wrap my head around it. Either, perhaps the documentation is arranged in a manner which is more focussed towards [ASP.NET Core Identity](1) API or I was terribly confused. I think safe to assume later.
+While trying to implement social login for a sample *ASP.NET Core MVC application*, I went through the official Microsoft [documentation](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-3.1). And, I must admit despite going through it mutiple times, I was not able to wrap my head around it. Either, perhaps the documentation is arranged in a manner which is more focussed towards [ASP.NET Core Identity][1] API or I was terribly confused. I think safe to assume later.
 
-This blog is a result of one of my self learning exercise, I followed this help [document](2), but still many things were missing and hence this post. Therefore documenting it for later reference.
+This blog is a result of one of my self learning exercise, I followed this help [document][2], but few things were not clear and hence this post. Therefore documenting it for later reference.
 
 ### Goals to  achieve:
 We will be trying to achieve following, and solve issues as they arise:
@@ -13,13 +13,13 @@ We will be trying to achieve following, and solve issues as they arise:
 #### 1. Enable basic Facebook Authentication
 #### 2. Custom Page to list login options
 
-**Source Code**: Check source code of this experiment at [GitHub repo.](4)   
+**Source Code**: Check source code of this experiment at [GitHub repo.][4]   
 
 Before we begin, **Lets setup the project**.
 
 1. From VS 2019, create a sample *ASP.NET Core Web Application*.
 	1. For this post, I Created a *Web Application (Model-View-Controller)*
-	2. Do not enable *Authentication*, and it's value should be *No Authentication*. **Why**? Because enabling it will bring in [ASP.NET Core Identity](1) API which we dont want. 
+	2. Do not enable *Authentication*, and it's value should be *No Authentication*. **Why**? Because enabling it will bring in [ASP.NET Core Identity][1] API which we dont want. 
 2. We need to install following *Nuget* packages
 	1. Microsoft.AspNetCore.Authentication.Cookies
 	2. Microsoft.AspNetCore.Authentication.Facebook
@@ -36,7 +36,7 @@ Before we begin, **Lets setup the project**.
 ### Enable basic Facebook Authentication
 
 
-Following the [documentation](2), the basic configuraton is following in the *startup.cs* file's *ConfigureServices* method:
+Following the [documentation][2], the basic configuraton is following in the *startup.cs* file's *ConfigureServices* method:
 	
 ```
 public void ConfigureServices(IServiceCollection services)
@@ -66,7 +66,7 @@ app.UseAuthentication();
 **Important**: It is important to specify both the default authentication scheme and default Challenge scheme. Else, we will get an error which is something like this: Also, dont forgot to add *Cookie* auth scheme (```.AddCookie()```).
 > *InvalidOperationException*: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
 
-> **Why**: Because, these values will be used by Authentication middleware to check and follow rules defined for Authentication. For example, when an unauthorized user tries to access a secure endpoint then the challenge prompts user to sign in, here we are using **FacebookDefaults.AuthenticationScheme** for *Challenge*. More [here](3).
+> **Why**: Because, these values will be used by Authentication middleware to check and follow rules defined for Authentication. For example, when an unauthorized user tries to access a secure endpoint then the challenge prompts user to sign in, here we are using **FacebookDefaults.AuthenticationScheme** for *Challenge*. More [here][3].
 
 **Test**: Debug or Hit F5, and try to navigate to "https://localhost:44300/Home/Privacy", we will be immediately redirected to Facebook login screen for *Authentication*.
 
