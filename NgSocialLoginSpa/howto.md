@@ -4,7 +4,7 @@ This post is an outcome of the next learning task which I took upon myself for m
 
 In this post, we will do the same with an Angular SPA.
 
-**Source Code**: Check source code of this learnig post at [GitHub repo](4). 
+**Source Code**: Check source code of this learnig post at [GitHub repo][4]. 
 
 ## Here is what we are going to do in this post:
 
