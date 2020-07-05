@@ -215,7 +215,7 @@ It is a very raw implementation, but enough to give us a start for something big
 [1]: https://prerakkaushik.wordpress.com/2020/06/21/facebook-authentication-in-asp-net-core-without-identity/
 [2]: https://angular.io/guide/setup-local
 [3]: https://prerakkaushik.files.wordpress.com/2020/07/appstart.png?w=700  "Angular SPA"
-[4]: 
+[4]:https://github.com/pkaushik23/mycodeshares/tree/master/NgSocialLoginSpa
 [5]:https://prerakkaushik.wordpress.com/2020/06/13/add-routing-to-existing-anguar-project/
 [6]: https://prerakkaushik.files.wordpress.com/2020/07/dashboardlink.png "dashboard link" 
 [7]: https://prerakkaushik.files.wordpress.com/2020/07/dashboardcontent.png  "dashboard content" 
