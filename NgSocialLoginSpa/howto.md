@@ -19,7 +19,7 @@ Run following commands and follow the wizard that follows. When asked,  please e
 ```
 ng new NgSocialLoginSpa
 ```
-*NgSocialLoginSpa* is a fictious app name I have used. For detailed help, please follow official [Angular Documentation](2).
+*NgSocialLoginSpa* is a fictious app name I have used. For detailed help, please follow official [Angular Documentation][2].
 
 Run application by executing following command:
 ```
@@ -69,7 +69,7 @@ At this point, on the home page you would see a *Dashboard* link and clicking on
 
 ![Alt][7]
 
-For more information check [Add Routing](5)
+For more information check [Add Routing][5]
 #### 3. Add a *LoginService*, which would be our central service to maintain login related state and behaviour.
 Now, we want to create a service which will have state of the user(whether logged in or not) and also method for login and logout.
 Execute ng-cli command ``` ng generate service login``` to generate *LoginService*. Also, add following code. We will refine the below code when we implement FB Login.
@@ -106,7 +106,7 @@ A) Create a new service which will act as our route guard.
 	ng generate service authorizeGuard
 ```
 
-- The class needs to implement [CanActivate](8) interface.
+- The class needs to implement [CanActivate][8] interface.
 - This service would be required to check if the user is logged in or not, therefore will also need reference to our Login Service
 
 B) Replace the content of the class with following and resolve reference errors.
@@ -141,7 +141,7 @@ At this point, If we we try to access the url (http://localhost:4200/dashboard) 
 
 This is the step, for which the post is written and is coming last but at the same time, is the **simplest one**.
 
-For this step, we are going to use an excellent npm package : ["angularx-social-login"](9). The package has a very good documentation and if you wish, you can see and learn from the source code and implement something on your own. Check its [github repo](10) as well. There is nothing much to focus as the [documentation](10) is very accurate.
+For this step, we are going to use an excellent npm package : ["angularx-social-login"][9]. The package has a very good documentation and if you wish, you can see and learn from the source code and implement something on your own. Check its [github repo][10] as well. There is nothing much to focus as the [documentation][10] is very accurate.
 
 What we are going to do next is , configure our *LoginService*, to make use of this package.
 
