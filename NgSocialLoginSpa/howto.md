@@ -212,7 +212,7 @@ B) Open **src\app\login.service.ts** and make following changes:
 That's it folks, our SPA is ready with Facebook Authentication.
 It is a very raw implementation, but enough to give us a start for something bigger.  Thanks.
 
-[1]: https://prerakkaushik.wordpress.com/2020/06/21/facebook-authentication-in-asp-net-core-without-identity/
+[1]:https://prerakkaushik.wordpress.com/2020/06/21/facebook-authentication-in-asp-net-core-without-identity/
 [2]: https://angular.io/guide/setup-local
 [3]: https://prerakkaushik.files.wordpress.com/2020/07/appstart.png?w=700  "Angular SPA"
 [4]:https://github.com/pkaushik23/mycodeshares/tree/master/NgSocialLoginSpa
