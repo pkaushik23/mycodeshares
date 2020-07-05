@@ -1,6 +1,6 @@
 ## Implement Facebook login in an Angular application
 
-This post is an outcome of the next learning task which I took upon myself for my self learning series. In my last post -  [Facebook Authentication in ASP.Net Core without Identity](1), I tried securing .Net Core Web application with social login. The intent was only users authenticated by Facebook will be allowed to access the application.
+This post is an outcome of the next learning task which I took upon myself for my self learning series. In my last post -  [Facebook Authentication in ASP.Net Core without Identity][1], I tried securing .Net Core Web application with social login. The intent was only users authenticated by Facebook will be allowed to access the application.
 
 In this post, we will do the same with an Angular SPA.
 
