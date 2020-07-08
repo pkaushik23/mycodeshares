@@ -183,7 +183,7 @@ That is it for this post. thanks.
 
 
 [1]: https://prerakkaushik.wordpress.com/2020/07/05/facebook-authentication-in-an-angular-application/
-[2]: http://github.com
+[2]: https://github.com/pkaushik23/mycodeshares/tree/master/FbAuthWebAPI
 [3]: https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-3.1&tabs=visual-studio
 [4]: https://www.postman.com/
 [5]: /seq.dig.png
